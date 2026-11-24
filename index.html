@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shawn Delker Art — Preserving the Beauty of the Ordinary</title>
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --surface: #ffffff;
+      --text: #1f2421;
+      --muted: #555e58;
+      --accent: #2f5d46;
+      --accent-soft: #eef4f0;
+      --border: #e3e6e4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 1rem 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--text);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin: 0;
+      padding: 0;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .hero-media {
+      background: var(--accent-soft);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .hero h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.25rem;
+      line-height: 1.2;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--accent);
+      margin: 0 0 1rem;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2.25rem;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .gallery-placeholder {
+      border: 1px dashed #b9c2bc;
+      border-radius: 8px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: var(--muted);
+      background: var(--bg);
+      font-size: 0.9rem;
+    }
+
+    .news-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .news-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .faq-block {
+      margin-top: 1.5rem;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+    }
+
+    label {
+      display: grid;
+      gap: 0.35rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.65rem 0.75rem;
+      border: 1px solid #c6cdc8;
+      border-radius: 6px;
+      font: inherit;
+      background: #fff;
+    }
+
+    button {
+      justify-self: start;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.92;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-wrap">
+      <a class="brand" href="#home">Shawn Delker Art</a>
+      <nav aria-label="Primary Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#artwork">Artwork</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div>
+        <h1>Shawn Delker</h1>
+        <p class="tagline">Art that Preserves the Beauty of the Ordinary</p>
+        <p>
+          My artwork preserves the essence of my summer garden on fabric and paper to celebrate the everyday
+          beauty of nature in the Kansas landscape. I use a wildlife camera to photograph the birds and animals
+          that visit my garden, and I use those photos as a reference to stitch the creature using thread and
+          my own guiding hands, much like a painter uses a brush and paint. You might say my sewing machine is
+          my brush and thread is my paint. Just as each animal is different, each of my art pieces is unique
+          because it is totally hand done.
+        </p>
+        <p>
+          Welcome to my website! Learn more about me, my artwork, and my techniques in the sections below.
+        </p>
+      </div>
+      <div class="hero-media">
+        <strong>Featured Artwork Placeholder</strong>
+        <p>Add your main wildlife thread-painting image here.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Shawn Marie Delker is a dedicated fiber artist who began sewing at the age of five, mentored by her
+        mother. She started quilting in 2000 and quickly developed an interest in art quilting. Although
+        primarily self-taught, Shawn has further refined her skills through studies with several
+        internationally recognized fiber artists.
+      </p>
+      <p>
+        Shawn’s present body of work is executed exclusively in thread. She has established distinct techniques
+        and a signature style to achieve her hand-guided machine embroidery art, which she creates on heavily
+        stabilized fabric.
+      </p>
+      <p>
+        Shawn’s art has been juried into galleries in Topeka, Omaha and Albuquerque, and she is a frequent
+        exhibitor at many local galleries. She received the third-place prize at the 2017 Fiber Arts Fiesta in
+        Albuquerque, New Mexico, and more recently she won First Place in “Kansas Through the Eyes of an
+        Artist” at the Carriage Factory Gallery in Newton, Kansas in 2024 and Best of Show in the NOTO Fiber
+        Arts Passion’s Exhibition in Topeka in 2024, and People’s Choice at NOTO Music and Memory show in
+        2025. Her experiences include being featured as the Artist in Residence at the Red Barn Studio in
+        Lindsborg and her 2025 solo show at the Vernon Filley Art Gallery in Pratt, Kansas. Her art can be
+        found for sale at the SNW gallery in Manhattan Kansas, in the gift shop at the Salina Art Center, and
+        at the Vernon Filley Art Museum in Pratt.
+      </p>
+      <p>
+        Shawn is also an instructor at Salina Art Center, where she teaches art classes for both adults and
+        children. She currently teaches macrame, collage, hand sewing, and bookbinding, and she continues to
+        expand her skills through ongoing learning.
+      </p>
+    </section>
+
+    <section id="artwork">
+      <h2>Explore My Artwork</h2>
+      <p><em>I’m pleased to share photos of some of my recent work. Click on the photos for more details!</em></p>
+      <div class="gallery-grid">
+        <div class="gallery-placeholder">Artwork Image 1</div>
+        <div class="gallery-placeholder">Artwork Image 2</div>
+        <div class="gallery-placeholder">Artwork Image 3</div>
+        <div class="gallery-placeholder">Artwork Image 4</div>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <p><em>Here are current and upcoming events and places where you can see my work.</em></p>
+
+      <div class="news-item">
+        <h3>Salina Art Center, Salina</h3>
+        <p>
+          I invite you to see some of my latest work for sale at the Salina Art Center Gift Shop, 242 S. Santa
+          Fe Ave., Salina, KS.
+        </p>
+      </div>
+
+      <div class="news-item">
+        <h3>Vernon Filley Art Museum, Pratt</h3>
+        <p>
+          I was sad to see my exhibit at the Vernon Filley Art Museum come to an end, as the Museum staff and
+          the people of Pratt were so supportive and friendly! I am pleased that some of my smaller works remain
+          there for sale in their gift shop at 421 S. Jackson in Pratt, KS.
+        </p>
+      </div>
+
+      <div class="news-item">
+        <h3>SNW Gallery, Manhattan</h3>
+        <p>
+          I’m showing some of my latest work at the SNW Gallery, 328 Poyntz Avenue, in downtown Manhattan, KS.
+        </p>
+      </div>
+    </section>
+
+    <section id="faqs">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-block">
+        <h3>What is Botanical Printing?</h3>
+        <p>
+          <strong>Botanical printing is a process by which plant colors and shapes are transferred to fabric or
+          paper, typically by applying heat and pressure.</strong>
+        </p>
+        <p><em>Botanical printing, step-by-step:</em></p>
+        <ul>
+          <li>Apply the appropriate liquid mordant to the fabric or paper. (A mordant helps the material to accept the color of the plants).</li>
+          <li>Place fabric on a Teflon sheet on top of a layer of wet felt.</li>
+          <li>Dip plants in ferrous sulfate solution to enhance the color.</li>
+          <li>Arrange plants on fabric.</li>
+          <li>Cover plants with a second layer of wet felt and another Teflon sheet.</li>
+          <li>Place this stack on the preheated heat press and press for 4 minutes. Note: This process is dependent on the time of year and the type of plants.</li>
+          <li>Remove stack from heat press.</li>
+          <li>Peel plant material from fabric.</li>
+        </ul>
+        <p><strong><em>Admire the results!</em></strong></p>
+      </div>
+
+      <div class="faq-block">
+        <h3>What is Thread Painting?</h3>
+        <p>
+          <strong>Thread painting is hand guiding fabric through a sewing machine to apply color and texture,
+          using thread to “paint” a design.</strong>
+        </p>
+        <p><em>Supplies and equipment needed for thread painting:</em></p>
+        <ul>
+          <li>Select a good-quality photograph.</li>
+          <li>Print a color photograph to serve as a color reference.</li>
+          <li>Print a black-and-white photo the actual size you wish to thread paint.</li>
+          <li>Trace the main details of the black-and-white photo very carefully, making a “cartoon” drawing.</li>
+          <li>Transfer the cartoon drawing onto fabric using a light box.</li>
+          <li>Stabilize the fabric by fusing it onto buckram and felt.</li>
+        </ul>
+        <p><em>Setting up the sewing machine:</em></p>
+        <ul>
+          <li>Prepare the sewing machine by putting in a #90 needle, installing the embroidery foot, lowering the feed dogs, disengaging the foot pedal, setting the machine on a slow speed, and putting 60 weight thread in the bobbin.</li>
+          <li>Use 40 weight machine embroidery thread to add color to the design, using the color photo as a reference. You may use a straight stitch or a zig-zag stitch.</li>
+        </ul>
+        <p><em>Here is where the magic happens:</em></p>
+        <ul>
+          <li>When thread painting birds or animals, I usually start with the eye and work out from there. I stitch in the direction of the fur or feathers with darker colors first to establish the shadows. Vary the length of the stitches by moving the fabric faster or slower; this can mimic fur especially well.</li>
+          <li>Stitch in the remaining colors, adding the highlights last.</li>
+          <li>Several layers of thread help establish a blend of color needed for a more lifelike look. Keep adding layers of thread until the design is complete.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Send me an email using the form, or see me on Facebook!</p>
+      <p><a href="https://web.archive.org/web/20260209113154/https://www.facebook.com/profile.php?id=100009966005483">Facebook</a></p>
+      <form action="#" method="post">
+        <label>
+          First Name *
+          <input type="text" name="firstname" placeholder="First Name" required />
+        </label>
+        <label>
+          Last Name *
+          <input type="text" name="lastname" placeholder="Last Name" required />
+        </label>
+        <label>
+          Email *
+          <input type="email" name="email" placeholder="email" required />
+        </label>
+        <label>
+          Message *
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        </label>
+        <button type="submit">SEND</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    Copyright © 2026 by Shawn Delker. All rights reserved.
+  </footer>
+</body>
+</html>
